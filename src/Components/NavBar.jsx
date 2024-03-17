@@ -33,11 +33,11 @@ function NavBar() {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="h-[10vh] overflow-hidden flex items-center">
-        <div className="w-1/2 md:w-2/5 h-full">
+      <div className="h-[10vh] w-full overflow-hidden flex items-center">
+        <div className="w-1/2 md:w-1/3 h-full">
           <img src={imageUrl} alt="Roofing Company Logo" className="h-[15vh] mt-[-3vh] ml-[-3vw] md:ml-0 " />
         </div>
-        <div className="w-1/2 justify-between hidden md:flex mr-4">
+        <div className="w-1/2 md:w-2/3 justify-around hidden md:flex">
           <a href="/about" className="text-2xl font-bold">About</a>
           <a href="/contact" className="text-2xl font-bold">Contact</a>
           <a href="/services" className="text-2xl font-bold">Services</a>
@@ -50,7 +50,7 @@ function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="flex flex-col items-center h-[25svh] w-screen bg-white border-b-2 border-black fixed top-[10vh] left-0 z-50 justify-center transition-transform duration-500 overflow-hidden"
+        <div className="flex flex-col items-center h-[25svh] w-full bg-white border-b-2 border-black fixed top-[10vh] left-0 z-50 justify-center transition-transform duration-500 overflow-hidden"
              style={containerStyles}> 
           <a href="/about" 
              style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '0ms' }}

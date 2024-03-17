@@ -4,7 +4,7 @@ function LandingPageCertifications() {
   const OwensCorning = "/assets/owens.webp";
   const OCIB = "/assets/ocib.webp";
   return (
-    <div className="h-[150svh] p-4">
+    <div className="h-[900px] md:h-[55svh] min-h-[650px] p-4 w-full overflow-hidden xl:px-[30rem]">
       <div className="h-[400px] md:h-[300px] flex flex-col justify-around">
         <div className="flex w-[290px] justify-around items-end">
           <div className="text-red-500 font-bold">—</div>
@@ -26,7 +26,7 @@ function LandingPageCertifications() {
         </div>
       </div>
 
-      <div className="h-[400px] grid grid-cols-2 md:grid-cols-4 pt-10">
+      <div className="h-[400px] grid grid-cols-2 md:grid-cols-4 pt-10 w-full overflow-hidden">
         <div
           className="h-[170px] md:h-[250px] "
           style={{

@@ -3,7 +3,7 @@ import { FaPeopleRoof } from "react-icons/fa6";
 
 function LandingPageOurProcess() {
   return (
-    <div className="h-[150svh] md:h-[55svh] min-h-[750px] w-screen px-4 flex flex-col overflow-hidden md:px-8">
+    <div className="h-[1000px] md:h-[55svh] min-h-[750px] w-full px-4 flex flex-col overflow-hidden md:px-8 xl:px-[30rem]">
       <div className="h-[400px] md:h-[300px] flex flex-col justify-around">
         <div className="flex w-[200px] justify-around items-end">
           <div className="text-red-500 font-bold">—</div>

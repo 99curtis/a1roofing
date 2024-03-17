@@ -1,10 +1,10 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 function LandingPageHero() {
-  const ImageURL = "/assets/LandingPageHeroImage.jpg";
+  const ImageURL = "/assets/LandingPageHeroImage.webp";
   return (
     <div
-      className="h-[60svh] md:min-h-[700px] flex relative w-screen overflow-hidden"
+      className="h-[60svh] md:min-h-[700px] flex relative w-full overflow-hidden"
       style={{
         backgroundImage: `url(${ImageURL})`,
         backgroundSize: "cover",
@@ -13,7 +13,7 @@ function LandingPageHero() {
     >
       <div className="absolute inset-0 bg-black opacity-35"></div>
 
-      <div className="relative flex flex-col h-full md:h-3/5 w-full md:justify-between md:pt-32 md:pl-4 md:t-20 md:w-3/5">
+      <div className="relative flex flex-col h-full md:h-[550px] w-full md:justify-between md:pt-32 md:pl-4 md:t-20 md:w-3/5 xl:px-[30rem] xl:w-full">
         <h2 className="flex justify-center h-1/5 md:h-[10] items-end text-white font-bold text-xl md:justify-start">
           A1 ROOFING
         </h2>
@@ -25,7 +25,7 @@ function LandingPageHero() {
           reliable consulting
         </h3>
 
-        <div className="flex justify-center h-1/5 w-screen text-white md:justify-start">
+        <div className="flex justify-center h-1/5 w-full text-white md:justify-start">
           <a href="tel:999-999-9999">
             <button className="w-56 h-2/3 min-h-[60px] bg-red-500 flex justify-between items-center px-2 rounded-xl">
               <div className="text-2xl">

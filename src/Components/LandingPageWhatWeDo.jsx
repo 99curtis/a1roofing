@@ -10,7 +10,7 @@ function LandingPageWhatWeDo() {
   const CooperRoofing = "/assets/copperroofing.webp";
 
   return (
-    <div className="h-[250svh] md:h-[75svh] min-h-[1000px] bg-zinc-800 text-white px-4 md:px-8">
+    <div className="h-[1700px] md:h-[75svh] min-h-[1000px] w-full overflow-hidden bg-zinc-800 text-white px-4 md:px-8 xl:px-[30rem]">
       <div className="pt-6 h-[450px] md:h-[300px] flex flex-col justify-between">
         <div className="flex w-[200px] justify-around items-end">
           <div className="text-red-500 font-bold">—</div>
@@ -45,7 +45,7 @@ function LandingPageWhatWeDo() {
             }}
           ></div>
           <div className="flex flex-col w-2/5 px-2 items-center justify-between ">
-            <div className="text-2xl md:text-3xl font-bold text-end text-black z-0 pb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-end text-black z-0 pb-2">
               Residential Roofing
             </div>
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
@@ -59,7 +59,7 @@ function LandingPageWhatWeDo() {
 
         <div className="h-[250px] flex group bg-white hover:scale-105 md:hover:scale-110  transition duration-200 overflow-hidden">
           <div className="flex flex-col w-2/5 px-2 items-center justify-between ">
-            <div className="text-2xl md:text-3xl font-bold text-start text-black z-0 pb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-start text-black z-0 pb-2">
               Commercial Roofing
             </div>
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
@@ -91,7 +91,7 @@ function LandingPageWhatWeDo() {
             }}
           ></div>
           <div className="flex flex-col w-2/5 px-2 items-center justify-between ">
-            <div className="text-2xl md:text-3xl font-bold text-end text-black z-0 pb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-end text-black z-0 pb-2">
               Storm Damage
             </div>
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
@@ -104,7 +104,7 @@ function LandingPageWhatWeDo() {
         </div>
         <div className="h-[250px] flex group bg-white hover:scale-105 md:hover:scale-110 transition duration-200 overflow-hidden">
           <div className="flex flex-col w-2/5 px-2 items-center justify-between ">
-            <div className="text-2xl md:text-3xl font-bold text-start text-black z-0 pb-2">
+            <div className="text-2xl lg:text-3xl font-bold text-start text-black z-0 pb-2">
               Copper Roofing
             </div>
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
