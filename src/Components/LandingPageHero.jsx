@@ -4,7 +4,7 @@ function LandingPageHero() {
   const ImageURL = "/assets/LandingPageHeroImage.jpg";
   return (
     <div
-      className="h-[60svh] md:min-h-[700px] flex relative w-screen"
+      className="h-[60svh] md:min-h-[700px] flex relative w-screen overflow-hidden"
       style={{
         backgroundImage: `url(${ImageURL})`,
         backgroundSize: "cover",

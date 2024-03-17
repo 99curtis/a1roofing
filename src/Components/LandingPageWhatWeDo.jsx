@@ -34,7 +34,7 @@ function LandingPageWhatWeDo() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-20">
-        <div className="h-[250px] flex bg-white hover:scale-105 md:hover:scale-110 transition duration-200 group">
+        <div className="h-[250px] flex bg-white hover:scale-105 md:hover:scale-110 transition duration-200 group overflow-hidden">
           <div
             className="h-full w-3/5 bg-cover z-10 bg-center"
             style={{
@@ -51,13 +51,13 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <FaHome className="text-black" />
             </div>
-            <div className="text-black font-bold text-end w-full cursor-pointer">
+            <div className="text-black font-bold text-end w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
               Read More{">>"}
             </div>
           </div>
         </div>
 
-        <div className="h-[250px] flex group bg-white hover:scale-105 md:hover:scale-110  transition duration-200">
+        <div className="h-[250px] flex group bg-white hover:scale-105 md:hover:scale-110  transition duration-200 overflow-hidden">
           <div className="flex flex-col w-2/5 px-2 items-center justify-between ">
             <div className="text-2xl md:text-3xl font-bold text-start text-black z-0 pb-2">
               Commercial Roofing
@@ -65,7 +65,7 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <FaBuilding className="text-black" />
             </div>
-            <div className="text-black font-bold text-start w-full cursor-pointer">
+            <div className="text-black font-bold text-start w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
               Read More{">>"}
             </div>
           </div>
@@ -80,7 +80,7 @@ function LandingPageWhatWeDo() {
           ></div>
         </div>
 
-        <div className="h-[250px] group flex bg-white hover:scale-105 md:hover:scale-110  transition duration-200">
+        <div className="h-[250px] group flex bg-white hover:scale-105 md:hover:scale-110  transition duration-200 overflow-hidden">
           <div
             className="h-full w-3/5 bg-cover z-10 bg-center"
             style={{
@@ -97,12 +97,12 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <IoIosThunderstorm className="text-black" />
             </div>
-            <div className="text-black font-bold text-end w-full cursor-pointer">
+            <div className="text-black font-bold text-end w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
               Read More{">>"}
             </div>
           </div>
         </div>
-        <div className="h-[250px] flex group bg-white hover:scale-105 md:hover:scale-110 transition duration-200">
+        <div className="h-[250px] flex group bg-white hover:scale-105 md:hover:scale-110 transition duration-200 overflow-hidden">
           <div className="flex flex-col w-2/5 px-2 items-center justify-between ">
             <div className="text-2xl md:text-3xl font-bold text-start text-black z-0 pb-2">
               Copper Roofing
@@ -110,7 +110,7 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <MdOutlineRoofing className="text-black" />
             </div>
-            <div className="text-black font-bold text-start w-full cursor-pointer">
+            <div className="text-black font-bold text-start w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
               Read More{">>"}
             </div>
           </div>

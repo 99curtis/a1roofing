@@ -26,7 +26,7 @@ function LandingPageOurProcess() {
       <div className="">
         <div className="h-[250px] md:h-[180px] flex group">
           <div className="w-1/3 md:w-[12%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
-            <div className="text-5xl bg-red-100 p-4 rounded-full group-hover:bg-red-400 transition-colors duration-200">
+            <div className="text-5xl bg-red-100 p-4 rounded-full group-hover:bg-red-400 group-hover:scale-125 transition-all duration-300">
               <FaMagnifyingGlass />
             </div>
           </div>
@@ -41,7 +41,7 @@ function LandingPageOurProcess() {
         </div>
         <div className="h-[250px] md:h-[180px] flex group">
           <div className="w-1/3 md:w-[12%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
-            <div className="text-5xl bg-red-100 p-4 rounded-full group-hover:bg-red-400 transition-colors duration-200">
+            <div className="text-5xl bg-red-100 p-4 rounded-full group-hover:bg-red-400 group-hover:scale-125 transition-all duration-300">
               <FaPeopleRoof />
             </div>
           </div>
