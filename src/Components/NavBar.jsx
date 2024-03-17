@@ -7,7 +7,7 @@ function NavBar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [containerStyles, setContainerStyles] = useState({
-    transform: 'translateY(-100%)' // Initially positioned above viewport
+    transform: 'translateY(-100%)'
   });
   const [linkStyles, setLinkStyles] = useState({
     transform: 'translateY(-50px)',
@@ -20,15 +20,12 @@ function NavBar() {
 
   useEffect(() => {
     if (menuOpen) {
-      // Slide down the container first
       setContainerStyles({ transform: 'translateY(0)' }); 
 
-      // After a slight delay, animate the links
       setTimeout(() => {
         setLinkStyles({ transform: 'translateY(0)', opacity: 1 });
-      }, 200); // Adjust this delay if needed
+      }, 200); 
     } else {
-       // Reset styles
       setContainerStyles({ transform: 'translateY(-100%)' });
       setLinkStyles({ transform: 'translateY(-50px)', opacity: 0 });
     }
@@ -38,7 +35,7 @@ function NavBar() {
     <div className="relative">
       <div className="h-[10vh] w-screen overflow-hidden flex items-center">
         <div className="w-1/2 h-full">
-          <img src={imageUrl} alt="Roofing Company Logo" className="h-[15vh] mt-[-2vh] ml-[-2vw]" />
+          <img src={imageUrl} alt="Roofing Company Logo" className="h-[15vh] mt-[-3vh] ml-[-3vw]" />
         </div>
         <div className="w-3/5 justify-between hidden md:flex mr-4">
           <a href="/about" className="text-2xl font-bold">About</a>

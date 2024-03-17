@@ -3,7 +3,7 @@ import { FaPeopleRoof } from "react-icons/fa6";
 
 function LandingPageOurProcess() {
   return (
-    <div className="h-[150svh] w-screen px-4 flex flex-col overflow-hidden md:px-8">
+    <div className="h-[150svh] md:h-[55svh] min-h-[750px] w-screen px-4 flex flex-col overflow-hidden md:px-8">
       <div className="h-[400px] md:h-[300px] flex flex-col justify-around">
         <div className="flex w-[200px] justify-around items-end">
           <div className="text-red-500 font-bold">—</div>
@@ -24,9 +24,9 @@ function LandingPageOurProcess() {
       </div>
 
       <div className="">
-        <div className="h-[250px] md:h-[180px] flex">
-          <div className="w-1/3 md:w-[10%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
-            <div className="text-5xl bg-red-100 p-4 rounded-full">
+        <div className="h-[250px] md:h-[180px] flex group">
+          <div className="w-1/3 md:w-[12%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
+            <div className="text-5xl bg-red-100 p-4 rounded-full group-hover:bg-red-400 transition-colors duration-200">
               <FaMagnifyingGlass />
             </div>
           </div>
@@ -39,9 +39,9 @@ function LandingPageOurProcess() {
             </div>
           </div>
         </div>
-        <div className="h-[250px] md:h-[180px] flex">
-          <div className="w-1/3 md:w-[10%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
-            <div className="text-5xl bg-red-100 p-4 rounded-full">
+        <div className="h-[250px] md:h-[180px] flex group">
+          <div className="w-1/3 md:w-[12%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
+            <div className="text-5xl bg-red-100 p-4 rounded-full group-hover:bg-red-400 transition-colors duration-200">
               <FaPeopleRoof />
             </div>
           </div>
