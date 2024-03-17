@@ -37,15 +37,15 @@ function NavBar() {
   return (
     <div className="relative">
       <div className="h-[10vh] w-screen overflow-hidden flex items-center">
-        <div className="w-1/3 h-full">
+        <div className="w-1/2 h-full">
           <img src={imageUrl} alt="Roofing Company Logo" className="h-[15vh] mt-[-2vh] ml-[-2vw]" />
         </div>
-        <div className="w-2/3 justify-between hidden md:flex">
+        <div className="w-3/5 justify-between hidden md:flex mr-4">
           <a href="/about" className="text-2xl font-bold">About</a>
           <a href="/contact" className="text-2xl font-bold">Contact</a>
           <a href="/services" className="text-2xl font-bold">Services</a>
         </div>
-        <div className="md:hidden w-2/3 flex justify-end items-center">
+        <div className="md:hidden w-1/2 flex justify-end items-center">
           <button className="mr-6" onClick={toggleMenu}>
             {menuOpen ? <RiCloseFill size={36} /> : <TbMenuDeep size={30} />}
           </button>
@@ -53,21 +53,21 @@ function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="flex flex-col items-center h-[25svh] w-screen bg-white fixed top-[10vh] left-0 z-50 justify-center transition-transform duration-500"
+        <div className="flex flex-col items-center h-[25svh] w-screen bg-white border-b-2 border-black fixed top-[10vh] left-0 z-50 justify-center transition-transform duration-500"
              style={containerStyles}> 
           <a href="/about" 
              style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '0ms' }}
-             className="h-1/3 border-b-2 border-t-2 border-black w-full text-2xl font-bold flex items-center justify-center">
+             className="h-1/3 border-t-2 border-black w-full text-2xl font-bold flex items-center justify-center">
             About
           </a>
           <a href="/contact" 
-             style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '100ms' }}
-             className="h-1/3 border-b-2 border-black w-full text-2xl font-bold flex items-center justify-center">
+             style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '50ms' }}
+             className="h-1/3 border-t-2 border-black w-full text-2xl font-bold flex items-center justify-center">
             Contact
           </a>
           <a href="/services" 
-             style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '150ms' }}
-             className="h-1/3 border-b-2 border-black w-full text-2xl font-bold flex items-center justify-center">
+             style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '100ms' }}
+             className="h-1/3 border-t-2 border-black w-full text-2xl font-bold flex items-center justify-center">
             Services
           </a>
         </div>

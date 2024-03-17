@@ -7,10 +7,11 @@ function LandingPage() {
 
   return (
     <>
+    <div className="overflow-hidden w-screen">
     <NavBar />
     <LandingPageHero />
     <LandingPageOurProcess />
-
+    </div>
     </>
   )
 }

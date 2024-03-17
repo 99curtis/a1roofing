@@ -3,9 +3,9 @@ import { FaPeopleRoof } from "react-icons/fa6";
 
 function LandingPageOurProcess() {
   return (
-    <div className="h-[150svh] px-4">
-      <div className="h-[400px]  flex flex-col justify-around">
-        <div className="flex w-1/2 justify-around items-end">
+    <div className="h-[150svh] w-screen px-4 flex flex-col overflow-hidden md:px-8">
+      <div className="h-[400px] md:h-[300px] flex flex-col justify-around">
+        <div className="flex w-[200px] justify-around items-end">
           <div className="text-red-500 font-bold">—</div>
           <div className="text-zinc-400 font-bold tracking-widest pt-10">
             OUR PROCESS
@@ -23,34 +23,36 @@ function LandingPageOurProcess() {
         </div>
       </div>
 
-      <div className="h-[250px] flex">
-        <div className="w-1/3 h-full flex justify-center pr-6 items-center pb-8">
-          <div className="text-5xl bg-red-100 p-4 rounded-full">
-            <FaMagnifyingGlass />
+      <div className="">
+        <div className="h-[250px] md:h-[180px] flex">
+          <div className="w-1/3 md:w-[10%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
+            <div className="text-5xl bg-red-100 p-4 rounded-full">
+              <FaMagnifyingGlass />
+            </div>
+          </div>
+          <div className="w-2/3 h-full flex flex-col py-3">
+            <div className="font-bold text-xl pb-4">Detailed Consultation</div>
+            <div className="text-zinc-400">
+              Our process begins with a comprehensive evaluation of your roof's
+              condition, followed by providing a clear and detailed quotation.
+              We ensure all your inquiries are addressed thoroughly.
+            </div>
           </div>
         </div>
-        <div className="w-2/3 h-full flex flex-col py-3">
-          <div className="font-bold text-xl pb-4">Detailed Consultation</div>
-          <div className="text-zinc-400">
-            Our process begins with a comprehensive evaluation of your roof's
-            condition, followed by providing a clear and detailed quotation. We
-            ensure all your inquiries are addressed thoroughly.
+        <div className="h-[250px] md:h-[180px] flex">
+          <div className="w-1/3 md:w-[10%] h-full flex justify-center md:justify-start pr-6 items-center pb-8">
+            <div className="text-5xl bg-red-100 p-4 rounded-full">
+              <FaPeopleRoof />
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="h-[250px] flex">
-        <div className="w-1/3 h-full flex justify-center pr-6 items-center pb-8">
-          <div className="text-5xl bg-red-100 p-4 rounded-full">
-            <FaPeopleRoof />
-          </div>
-        </div>
-        <div className="w-2/3 h-full flex flex-col py-3">
-          <div className="font-bold text-xl pb-4">Fast Quality Service</div>
-          <div className="text-zinc-400">
-            Leveraging our expertise and efficient practices, we commit to
-            completing all necessary work within a single day, ensuring minimal
-            disruption to your routine. Rest assured, we address all queries
-            with the utmost attention to detail.
+          <div className="w-2/3 h-full flex flex-col py-3">
+            <div className="font-bold text-xl pb-4">Fast Quality Service</div>
+            <div className="text-zinc-400">
+              Leveraging our expertise and efficient practices, we commit to
+              completing all necessary work within a single day, ensuring
+              minimal disruption to your routine. Rest assured, we address all
+              queries with the utmost attention to detail.
+            </div>
           </div>
         </div>
       </div>

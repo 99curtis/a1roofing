@@ -13,25 +13,27 @@ function LandingPageHero() {
     >
       <div className="absolute inset-0 bg-black opacity-35"></div>
 
-      <div className="relative flex flex-col h-full w-full">
-        <h2 className="flex justify-center h-1/5 items-end text-white font-bold text-xl">
+      <div className="relative flex flex-col h-full w-full md:h-[500px] md:t-32 md:pl-4 md:t-20 md:w-3/5">
+        <h2 className="flex justify-center h-1/5 items-end text-white font-bold text-xl md:justify-start">
           A1 ROOFING
         </h2>
-        <h1 className="flex justify-center h-[25%] items-center text-white font-bold text-4xl text-center">
-          The best Roofing Services & Consulting
+        <h1 className="flex justify-center h-[25%] items-center md:text-start text-white font-bold text-4xl md:text-5xl text-center md:justify-start">
+          The Best Roofing Services & Consulting
         </h1>
-        <h3 className="flex justify-center h-[25%] text-white fold-bold text-xl text-center">
+        <h3 className="flex justify-center h-[25%] text-white fold-bold md:text-start text-xl text-center md:justify-start">
           Highest quality service for over 30 years, competitive pricing with
           reliable consulting
         </h3>
 
-        <div className="flex justify-center h-1/5 w-screen text-white">
-            <a href="tel:999-999-9999">
-                <button className="w-56 h-2/3 bg-red-500 flex justify-between items-center px-2 rounded-xl">
-                    <div className="text-2xl"><BsFillTelephoneFill/></div>
-                    <div className="text-xl font-bold">Free Consultation</div>
-                </button>
-            </a>
+        <div className="flex justify-center h-1/5 w-screen text-white md:justify-start">
+          <a href="tel:999-999-9999">
+            <button className="w-56 h-2/3 min-h-[60px] bg-red-500 flex justify-between items-center px-2 rounded-xl">
+              <div className="text-2xl">
+                <BsFillTelephoneFill />
+              </div>
+              <div className="text-xl font-bold">Free Consultation</div>
+            </button>
+          </a>
         </div>
       </div>
     </div>
