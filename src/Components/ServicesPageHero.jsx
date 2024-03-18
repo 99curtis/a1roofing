@@ -1,12 +1,12 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 
-function LandingPageHero() {
-  const ImageURL = "/assets/LandingPageHeroImage.webp";
+function ServicePageHero() {
+  const ServicePageHeroImage = "/assets/ServicePageHero.webp";
   return (
     <div
       className="h-[60svh] md:min-h-[700px] flex relative w-full overflow-hidden"
       style={{
-        backgroundImage: `url(${ImageURL})`,
+        backgroundImage: `url(${ServicePageHeroImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -15,14 +15,13 @@ function LandingPageHero() {
 
       <div className="relative flex flex-col h-full md:h-[550px] w-full md:justify-between md:pt-32 md:pl-4 md:t-20 md:w-3/5 xl:px-[30rem] xl:w-full">
         <h2 className="flex justify-center h-1/5 md:h-[10] items-end text-white font-bold text-xl md:justify-start">
-          A1 ROOFING
+          SERVICES
         </h2>
         <h1 className="flex justify-center h-[25%] items-center md:text-start text-white font-bold text-4xl md:text-5xl text-center md:justify-start">
-          Roofing Excellence & Expertise
+        Comprehensive Roofing Solutions
         </h1>
         <h3 className="flex justify-center h-[25%] md:h-[20%] text-white fold-bold md:text-start text-xl text-center md:justify-start">
-          Over 30 years delivering unparalleled roofing solutions, ensuring
-          durability and aesthetic appeal with expert consultancy.
+        Tailored to every need, our full range of services combines 30+ years of expertise with commitment to quality.
         </h3>
 
         <div className="flex justify-center h-1/5 w-full text-white md:justify-start">
@@ -40,4 +39,4 @@ function LandingPageHero() {
   );
 }
 
-export default LandingPageHero;
+export default ServicePageHero;

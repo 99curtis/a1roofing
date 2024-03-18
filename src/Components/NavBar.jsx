@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TbMenuDeep } from 'react-icons/tb';
 import { RiCloseFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const imageUrl = "/assets/RoofingCompanyLogo.webp";
@@ -35,12 +36,14 @@ function NavBar() {
     <div className="relative overflow-hidden">
       <div className="h-[10vh] w-full overflow-hidden flex items-center">
         <div className="w-1/2 md:w-1/3 h-full">
+          <Link to="/">
           <img src={imageUrl} alt="Roofing Company Logo" className="h-[15vh] mt-[-3vh] ml-[-3vw] md:ml-0 " />
+          </Link>
         </div>
         <div className="w-1/2 md:w-2/3 justify-around hidden md:flex">
-          <a href="/about" className="text-2xl font-bold">About</a>
-          <a href="/contact" className="text-2xl font-bold">Contact</a>
-          <a href="/services" className="text-2xl font-bold">Services</a>
+          <Link to="/about" className="text-2xl font-bold">About</Link>
+          <Link to="/contact" className="text-2xl font-bold">Contact</Link>
+          <Link to="/services" className="text-2xl font-bold">Services</Link>
         </div>
         <div className="md:hidden w-1/2 flex justify-end items-center">
           <button className="mr-6" onClick={toggleMenu}>

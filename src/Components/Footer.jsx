@@ -8,7 +8,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="md:h-[900px] h-[1200px] bg-zinc-800 lg:px-20 xl:px-[38rem]">
+    <div className="md:h-[900px] h-[1200px] bg-zinc-800 lg:px-20 xl:px-[35rem]">
       <div className="h-[25%] md:h-[35%] w-full flex flex-col items-center justify-center">
         <div className="h-1/2 w-full flex flex-col justify-center">
           <div className="flex justify-center pt-20">
@@ -67,7 +67,7 @@ function Footer() {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 p-4 pt-20 md:px-20 text-white">
-        <div className="h-[300px] flex flex-col justify-around">
+        <div className="h-[300px] flex flex-col justify-around md:pl-[25%]">
           <div className="font-bold text-2xl">Our Services</div>
           <div className="h-1 bg-red-500 w-[50px]"></div>
           <div className="flex items-center text-xl text-zinc-400">
@@ -83,7 +83,7 @@ function Footer() {
             <MdKeyboardArrowRight /> Copper Roofing
           </div>
         </div>
-        <div className="pt-20 md:pt-0 h-[450px] flex flex-col justify-around">
+        <div className="pt-20 md:pt-0 h-[450px] flex flex-col justify-around md:pl-[25%] lg:pl-[15%]">
           <div className="font-bold text-2xl">Working Hours</div>
           <div className="h-1 bg-red-500 w-[50px]"></div>
           <div className="flex items-center text-xl">
