@@ -55,21 +55,21 @@ function NavBar() {
       {menuOpen && (
         <div className="flex flex-col items-center h-[25svh] w-full bg-white border-b-2 border-black fixed top-[10vh] left-0 z-50 justify-center transition-transform duration-500 overflow-hidden"
              style={containerStyles}> 
-          <a href="/about" 
+          <Link to="/about" 
              style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '0ms' }}
              className="h-1/3 border-t-2 border-black w-full text-2xl font-bold flex items-center justify-center">
             About
-          </a>
-          <a href="/contact" 
+          </Link>
+          <Link to="/contact" 
              style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '50ms' }}
              className="h-1/3 border-t-2 border-black w-full text-2xl font-bold flex items-center justify-center">
             Contact
-          </a>
-          <a href="/services" 
+          </Link>
+          <Link to="/services" 
              style={{ ...linkStyles, transition: 'transform 0.5s ease-out, opacity 0.5s ease-out', transitionDelay: '100ms' }}
              className="h-1/3 border-t-2 border-black w-full text-2xl font-bold flex items-center justify-center">
             Services
-          </a>
+          </Link>
         </div>
       )}
     </div>
