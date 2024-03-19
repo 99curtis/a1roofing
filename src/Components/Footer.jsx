@@ -5,8 +5,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
+import useScrollToTop from "./useScrollToTop";
 
 function Footer() {
+    useScrollToTop();
   return (
     <div className="md:h-[900px] h-[1200px] bg-zinc-800 lg:px-20 xl:px-[35rem]">
       <div className="h-[25%] md:h-[35%] w-full flex flex-col items-center justify-center">
@@ -68,44 +71,59 @@ function Footer() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 p-4 pt-20 md:px-20 text-white">
         <div className="h-[300px] flex flex-col justify-around md:pl-[25%]">
-          <div className="font-bold text-2xl">Our Services</div>
+          <div className="font-bold text-2xl">Navigation</div>
           <div className="h-1 bg-red-500 w-[50px]"></div>
-          <div className="flex items-center text-xl text-zinc-400">
-            <MdKeyboardArrowRight /> Residential Roofing
-          </div>
-          <div className="flex items-center text-xl text-zinc-400">
-            <MdKeyboardArrowRight /> Commercial Roofing
-          </div>
-          <div className="flex items-center text-xl text-zinc-400">
-            <MdKeyboardArrowRight /> Storm Damage
-          </div>
-          <div className="flex items-center text-xl text-zinc-400">
-            <MdKeyboardArrowRight /> Copper Roofing
-          </div>
+          <Link to="/">
+            <div className="flex items-center text-xl text-zinc-400">
+              <MdKeyboardArrowRight /> Home Page
+            </div>
+          </Link>
+          <Link to="/about">
+            <div className="flex items-center text-xl text-zinc-400">
+              <MdKeyboardArrowRight /> About Us
+            </div>
+          </Link>
+          <Link to="/contact">
+            <div className="flex items-center text-xl text-zinc-400">
+              <MdKeyboardArrowRight /> Contact Us
+            </div>
+          </Link>
+          <Link to="/services">
+            <div className="flex items-center text-xl text-zinc-400">
+              <MdKeyboardArrowRight /> Services
+            </div>
+          </Link>
         </div>
-        <div className="pt-20 md:pt-0 h-[450px] flex flex-col justify-around md:pl-[25%] lg:pl-[15%]">
+        <div className="pt-20 md:pt-0 h-[450px] flex flex-col justify-around md:pl-[5%] lg:pl-[15%]">
           <div className="font-bold text-2xl">Working Hours</div>
           <div className="h-1 bg-red-500 w-[50px]"></div>
           <div className="flex items-center text-xl">
-            <div className="">Monday:&nbsp; </div> <div className="text-zinc-400">8:00am - 5:00pm</div>
+            <div className="">Monday:&nbsp; </div>{" "}
+            <div className="text-zinc-400">8:00am - 5:00pm</div>
           </div>
           <div className="flex items-center text-xl">
-            <div className="">Tuesday:&nbsp; </div> <div className="text-zinc-400">8:00am - 5:00pm</div>
+            <div className="">Tuesday:&nbsp; </div>{" "}
+            <div className="text-zinc-400">8:00am - 5:00pm</div>
           </div>
           <div className="flex items-center text-xl">
-            <div className="">Wednesday:&nbsp; </div> <div className="text-zinc-400">8:00am - 5:00pm</div>
+            <div className="">Wednesday:&nbsp; </div>{" "}
+            <div className="text-zinc-400">8:00am - 5:00pm</div>
           </div>
           <div className="flex items-center text-xl">
-            <div className="">Thursday:&nbsp; </div> <div className="text-zinc-400">8:00am - 5:00pm</div>
+            <div className="">Thursday:&nbsp; </div>{" "}
+            <div className="text-zinc-400">8:00am - 5:00pm</div>
           </div>
           <div className="flex items-center text-xl">
-            <div className="">Friday:&nbsp; </div> <div className="text-zinc-400">8:00am - 5:00pm</div>
+            <div className="">Friday:&nbsp; </div>{" "}
+            <div className="text-zinc-400">8:00am - 5:00pm</div>
           </div>
           <div className="flex items-center text-xl">
-            <div className="">Saturday:&nbsp; </div> <div className="text-zinc-400">8:00am - 12:00pm</div>
+            <div className="">Saturday:&nbsp; </div>{" "}
+            <div className="text-zinc-400">8:00am - 12:00pm</div>
           </div>
           <div className="flex items-center text-xl">
-            <div className="">Sunday:&nbsp; </div> <div className="text-zinc-400">Closed</div>
+            <div className="">Sunday:&nbsp; </div>{" "}
+            <div className="text-zinc-400">Closed</div>
           </div>
         </div>
       </div>

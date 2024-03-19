@@ -1,7 +1,8 @@
 import { FaHome } from "react-icons/fa";
 import { IoIosThunderstorm } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
-import { MdOutlineRoofing } from "react-icons/md";
+import { MdOutlineRoofing, MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function LandingPageWhatWeDo() {
   const CommercialRoofing = "/assets/commercialroofing.webp";
@@ -51,9 +52,12 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <FaHome className="text-black" />
             </div>
-            <div className="text-black font-bold text-end w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
-              Read More{">>"}
-            </div>
+            <Link to="/services">
+            <div className="text-black font-bold text-end text-sm w-full cursor-pointer opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all ease-in-out duration-300 flex items-center justify-end">
+                All Services
+                <MdKeyboardArrowRight />
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -65,9 +69,12 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <FaBuilding className="text-black" />
             </div>
-            <div className="text-black font-bold text-start w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
-              Read More{">>"}
-            </div>
+            <Link to="/services">
+            <div className="text-black font-bold text-end text-sm w-full cursor-pointer opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all ease-in-out duration-300 flex items-center justify-end">
+                All Services
+                <MdKeyboardArrowRight />
+              </div>
+            </Link>
           </div>
           <div
             className="h-full w-3/5 bg-cover z-10 bg-center"
@@ -97,9 +104,12 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <IoIosThunderstorm className="text-black" />
             </div>
-            <div className="text-black font-bold text-end w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
-              Read More{">>"}
-            </div>
+            <Link to="/services">
+            <div className="text-black font-bold text-end text-sm w-full cursor-pointer opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all ease-in-out duration-300 flex items-center justify-end">
+                All Services
+                <MdKeyboardArrowRight />
+              </div>
+            </Link>
           </div>
         </div>
         <div className="h-[250px] flex group bg-white hover:scale-105 md:hover:scale-110 transition duration-200 overflow-hidden">
@@ -110,9 +120,12 @@ function LandingPageWhatWeDo() {
             <div className="text-5xl bg-red-100 group-hover:bg-red-400 transition-colors duration-200 p-4 w-min rounded-full items-end">
               <MdOutlineRoofing className="text-black" />
             </div>
-            <div className="text-black font-bold text-start w-full cursor-pointer md:max-h-[0] group-hover:max-h-[25px] transition-all ease-in-out duration-300">
-              Read More{">>"}
-            </div>
+            <Link to="/services">
+            <div className="text-black font-bold text-end text-sm w-full cursor-pointer opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all ease-in-out duration-300 flex items-center justify-end">
+                All Services
+                <MdKeyboardArrowRight />
+              </div>
+            </Link>
           </div>
           <div
             className="h-full w-3/5 bg-cover z-10 bg-center"
